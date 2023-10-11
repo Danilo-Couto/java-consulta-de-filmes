@@ -1,0 +1,172 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "Consulta 1 - consulta com base em coleção vazia deve retornar um conjunto vazio",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 1 - consulta deve retornar resultados corretos",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 2 - consulta com base em coleção vazia deve retornar um conjunto vazio",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 2 - consulta deve retornar resultados corretos",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 3 - consulta com base em coleção vazia deve retornar um conjunto vazio",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 3 - consulta deve retornar resultados corretos",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 4 - consulta com base em coleção vazia deve retornar um conjunto vazio",
+      "enabled": true,
+      "identifier": null,
+      "order": 7,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 4 - consulta deve retornar um conjunto vazio quando nenhum artista atende ao requisito",
+      "enabled": true,
+      "identifier": null,
+      "order": 8,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 4 - consulta deve retornar resultados corretos",
+      "enabled": true,
+      "identifier": null,
+      "order": 9,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 5 - consulta com base em coleção vazia deve retornar uma lista vazia",
+      "enabled": true,
+      "identifier": null,
+      "order": 10,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 5 - consulta deve retornar uma lista vazia quando nenhum artista atende ao requisito",
+      "enabled": true,
+      "identifier": null,
+      "order": 11,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 5 - consulta deve retornar resultados corretos na ordem correta",
+      "enabled": true,
+      "identifier": null,
+      "order": 12,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 5 - nenhum artista deve aparecer mais de uma vez na lista de resultados",
+      "enabled": true,
+      "identifier": null,
+      "order": 13,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 6 - consulta com base em coleção vazia deve retornar uma lista vazia",
+      "enabled": true,
+      "identifier": null,
+      "order": 14,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 6 - consulta deve retornar uma lista vazia quando nenhum filme atende ao requisito",
+      "enabled": true,
+      "identifier": null,
+      "order": 15,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 6 - consulta deve retornar resultados corretos na ordem correta",
+      "enabled": true,
+      "identifier": null,
+      "order": 16,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "Consulta 6 - nenhum filme deve aparecer mais de uma vez na lista de resultados",
+      "enabled": true,
+      "identifier": null,
+      "order": 17,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "Consulta 7 - consulta com base em coleção vazia deve retornar um Map vazio",
+      "enabled": true,
+      "identifier": null,
+      "order": 18,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "Consulta 7 - consulta deve retornar um Map vazio quando nenhum filme atende ao requisito",
+      "enabled": true,
+      "identifier": null,
+      "order": 19,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "Consulta 7 - consulta deve retornar resultados corretos",
+      "enabled": true,
+      "identifier": null,
+      "order": 20,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "Consulta 7 - filme que atende os requisitos e pertence a mais de uma categoria deve aparecer em todas elas",
+      "enabled": true,
+      "identifier": null,
+      "order": 21,
+      "skill_ids": []
+    }
+  ]
+}
