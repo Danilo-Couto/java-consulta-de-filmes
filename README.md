@@ -279,7 +279,7 @@ Para garantir a experiência completa, não tire os olhos da tela. Bom filme! Qu
 <details>
 <summary><strong> 🗣 Nos dê feedbacks sobre o exercício!</strong></summary>
 
-Ao finalizar e submeter o exercício, não se esqueça de avaliar sua experiência preenchendo o [formulário](https://be-trybe.typeform.com/to/ZTeR4IbH).
+Ao finalizar e submeter o exercício, não se esqueça de avaliar sua experiência preenchendo o [formulário](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH1&template=betrybe/java-0x-exercicio-consulta-filmes).
 **Leva menos de 3 minutos!**
 
 </details>
