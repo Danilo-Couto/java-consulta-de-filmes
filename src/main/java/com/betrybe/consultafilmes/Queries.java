@@ -1,7 +1,12 @@
 package com.betrybe.consultafilmes;
 
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
+
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -21,7 +26,7 @@ public class Queries {
   public List<Movie> moviesByGivenYear(int ano) {
     return this.movies.stream()
         .filter(movie -> movie.getReleaseYear() == ano)
-        .collect(Collectors.toList());
+        .toList();
   }
 
   /**
@@ -29,10 +34,9 @@ public class Queries {
    */
   public List<String> allActorsInAlphabeticalOrder() {
     return this.movies.stream()
-        .map(movie -> movie.getActors())
-        .flatMap(Collection::stream)
+        .flatMap(movie -> movie.getActors().stream())
         .sorted()
-        .collect(Collectors.toList());
+        .toList();
   }
 
   /**
@@ -40,15 +44,12 @@ public class Queries {
    * os filmes que eles interpretaram.
    */
   public Map<String, Set<String>> selectMoviesByActor(String ator) {
-    Map<String, Set<String>> moviesForActorMap = new HashMap<>();
-    Set<String> moviesForActor = this.movies.stream()
-        .filter(movie -> movie.actors.contains(ator))
-        .map(movie -> movie.title)
-        .collect(Collectors.toSet());
-    if (!moviesForActor.isEmpty()) {
-      moviesForActorMap.put(ator, moviesForActor);
-    }
-    return moviesForActorMap;
+    return movies.stream()
+        .filter(movie -> movie.getActors().contains(ator))
+        .collect(groupingBy(
+            movie -> ator,
+            mapping(movie -> movie.getTitle(), toSet())
+        ));
   }
 
   /**
@@ -64,7 +65,7 @@ public class Queries {
             .filter(entry -> entry.getValue().contains(entry.getKey()))
             .map(entry -> entry.getKey())
         )
-        .collect(Collectors.toSet());
+        .collect(toSet());
   }
 
   /**
@@ -75,6 +76,7 @@ public class Queries {
    * seu nome como um dos itens do campo `atores`, ao mesmo tempo em que o diretor em questão tem o
    * seu nome como um dos itens do campo `directors` do mesmo filme.</p>
    */
+
   public List<String> actorsThatActedInMoviesOfDirectorInAlphabeticOrder(String diretor) {
     return this.movies.stream()
         .filter(m -> m.getDirectors().contains(diretor))
@@ -82,7 +84,7 @@ public class Queries {
         .flatMap(actors -> actors.stream())
         .distinct()
         .sorted()
-        .collect(Collectors.toList());
+        .collect(toList());
   }
 
   /**
@@ -98,8 +100,8 @@ public class Queries {
         .filter(movie -> movie.getDirectors().stream()
             .anyMatch(actor -> movie.getActors().contains(actor)))
         .distinct()
-        .sorted((m1, m2) -> Integer.compare(m2.getReleaseYear(), m1.getReleaseYear()))
-        .collect(Collectors.toList());
+        .sorted(Comparator.comparingInt((Movie movie) -> movie.releaseYear).reversed())
+        .collect(toList());
   }
 
   /**
@@ -108,7 +110,6 @@ public class Queries {
    * <p>Cada chave do Map representa uma categoria, enquanto cada valor representa o
    * conjunto de filmes que se encaixam na categoria da chave correspondente.</p>
    */
-
   public Map<String, Set<Movie>> moviesReleasedInYearGroupedByCategory(int ano) {
     return this.movies.stream()
         .filter(movie -> movie.getReleaseYear() == ano)
@@ -116,9 +117,9 @@ public class Queries {
             .map(category -> Map.entry(category, movie)) //até aqui é Set<Entry<String, Movie>>
         )
         //        .collect(Collectors.toSet());
-        .collect(Collectors.groupingBy(
+        .collect(groupingBy(
             entry -> entry.getKey(),
-            Collectors.mapping(entry -> entry.getValue(), Collectors.toSet())
+            Collectors.mapping(entry -> entry.getValue(),toSet())
         ));
   }
 }
