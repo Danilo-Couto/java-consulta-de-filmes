@@ -1,7 +1,5 @@
 package com.betrybe.consultafilmes;
 
-import java.util.Set;
-
 public class Main {
 
   /**
@@ -11,7 +9,7 @@ public class Main {
    */
   public static void main(String[] args) {
     Queries queries = new Queries(Movies.all());
-    Set<String> resultados = queries.actorsThatInterpretThemselves();
+    var resultados = queries.moviesReleasedInYearGroupedByCategory(2021);
     System.out.println(resultados);
   }
 }

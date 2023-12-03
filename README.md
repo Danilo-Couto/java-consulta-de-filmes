@@ -6,9 +6,6 @@ Para realizar o exercício, atente-se a cada passo descrito a seguir e se tiver 
 
 Aqui, você vai encontrar os detalhes de como estruturar o desenvolvimento do seu exercício a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
-## Termos e acordos
-Ao iniciar este exercício, você concorda com as diretrizes do [Código de Conduta e do Manual da Pessoa Estudante da Trybe](https://app.betrybe.com/learn/student-manual/codigo-de-conduta-da-pessoa-estudante).
-
 ## Entregáveis
 
 <details>
@@ -63,47 +60,6 @@ Neste exercício, verificamos se você é capaz de:
 - Agora, crie uma branch à qual você vai submeter os `commits` do seu exercício:
     - Você deve criar uma branch no seguinte formato: `nome-sobrenome-nome-do-exercício`;
     - Exemplo: `git checkout -b maria-soares-lessons-learned`
-
-4. Crie na raiz do exercício os arquivos que você precisará desenvolver:
-
-- Verifique que você está na raiz do exercício:
-    - Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/maria/code/**sd-0x-project-lessons-learned**_
-- Crie os arquivos index.html e style.css:
-    - Exemplo: `touch index.html style.css`
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_:
-    - Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git:
-    - Exemplo:
-        - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        - `git status` (devem aparecer listados os arquivos em verde)
-- Faça o `commit` inicial:
-    - Exemplo:
-        - `git commit -m 'iniciando o exercício. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
-        - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin maria-soares-lessons-learned`
-
-7. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-lessons-learned/pulls)
-    - Clique no botão verde _"New pull request"_
-    - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Coloque um título para o seu _Pull Request_
-    - Exemplo: _"Cria tela de busca"_
-- Clique no botão verde _"Create pull request"_
-
-- Adicione uma descrição para o _Pull Request_, um título nítido que o identifique, e clique no botão verde _"Create pull request"_
-
- <img width="1335" alt="Exemplo de pull request" src="https://user-images.githubusercontent.com/42356399/166255109-b95e6eb4-2503-45e5-8fb3-cf7caa0436e5.png">
-
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-lessons-learned/pulls) e confira que o seu _Pull Request_ está criado
-
-</details>
 
 <details>
 
@@ -273,17 +229,5 @@ Para conseguir rodar o seu código e verificar se ele funciona, você pode usar 
 A classe `Movies` contém alguns filmes que possuem dados incompletos, mas que servem bem ao propósito de validar o resultado das queries. Essa classe estará disponível para você utilizar e também ler o código fonte, caso necessite. Existe outra classe auxiliar, `MovieConstructor`, que também será disponibilizada, mas você não precisa se preocupar com ela, já que sua função é facilitar o carregamento dos dados da classe `Movies`.
 
 </details>
-
-Para garantir a experiência completa, não tire os olhos da tela. Bom filme! Quer dizer... boa sorte no desafio! 🍿
-
-<details>
-<summary><strong> 🗣 Nos dê feedbacks sobre o exercício!</strong></summary>
-
-Ao finalizar e submeter o exercício, não se esqueça de avaliar sua experiência preenchendo o [formulário](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH1&template=betrybe/java-0x-exercicio-consulta-filmes).
-**Leva menos de 3 minutos!**
-
-</details>
-
----
 
 <!-- mdi versão 1.0 exercício como projeto ⚠️ não exclua esse comentário -->
